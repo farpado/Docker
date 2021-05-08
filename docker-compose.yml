@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+    www:
+      build: .
+      restart: always
+      ports: 
+        - '3003:80'
+      networks:
+        - default
